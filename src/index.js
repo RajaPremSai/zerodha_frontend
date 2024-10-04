@@ -14,10 +14,10 @@ import NotFound from "./landing_page/NotFound";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <BrowserRouter>
+  <BrowserRouter basename="/zerodha_frontend">
     <NavBar />
     <Routes>
-      <Route path="/" element={<HomePage />} />
+      <Route exact path="/zerodha_frontend" element={<HomePage />} />
       <Route path="/signup" element={<SignUp />} />
       <Route path="/about" element={<About />} />
       <Route path="/support" element={<SupportPage />} />
