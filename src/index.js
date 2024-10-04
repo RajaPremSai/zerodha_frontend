@@ -17,7 +17,7 @@ root.render(
   <BrowserRouter basename="/zerodha_frontend">
     <NavBar />
     <Routes>
-      <Route exact path="/zerodha_frontend" element={<HomePage />} />
+      <Route exact path="/" element={<HomePage />} />
       <Route path="/signup" element={<SignUp />} />
       <Route path="/about" element={<About />} />
       <Route path="/support" element={<SupportPage />} />
